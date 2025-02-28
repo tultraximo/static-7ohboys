@@ -16,22 +16,23 @@ export default function Home() {
   const closeImage = () => setSelectedImage(null);
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
-    <nav className="mb-6">
-      <Link href="/about" className="mr-4 text-green-900 font-bold text-2xl">About</Link>
-      <Link href="/faq" className="mr-4 text-green-900 font-bold text-2xl">FAQ</Link>
-      <Link href="/contact" className="text-green-900 font-bold text-2xl">Contact Us</Link>
-    </nav>
-      <h1 className="text-2xl font-bold mb-6">Fresh 7ohBoys drop **2/27</h1>
+    <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-sm">
+      <nav className="mb-6">
+        <Link href="/about" className="mr-4 text-green-900 font-bold text-2xl">About</Link>
+        <Link href="/faq" className="mr-4 text-green-900 font-bold text-2xl">FAQ</Link>
+        <Link href="/contact" className="mr-4 text-green-900 font-bold text-2xl">Contact</Link>
+        <Link href="/disclaimer" className="mr-4 text-green-900 font-bold text-2xl">Disclaimer</Link>
+      </nav>
+      <h1 className="text-3xl font-bold mb-6 text-gray-800">Our Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {products.map((product) => (
           <div key={product.id} className="flex flex-col items-center">
-            <div className="border p-4 rounded w-full">
-              <h2 className="text-xl font-semibold">{product.name}</h2>
-              <p>{product.description}</p>
+            <div className="border p-4 rounded w-full bg-white">
+              <h2 className="text-xl font-semibold text-gray-800">{product.name}</h2>
+              <p className="text-gray-600">{product.description}</p>
               <p className="text-gray-600">{product.price}</p>
             </div>
-            <div className="mt-4 space-y-2 w-full">
+            <div className="mt-4 md:space-y-2 flex md:flex-col space-x-2 md:space-x-0 w-full overflow-x-auto">
               {product.images.map((image, index) => (
                 <Image
                   key={index}
@@ -40,7 +41,7 @@ export default function Home() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-auto object-cover rounded cursor-pointer"
+                  className="w-full md:w-full h-auto object-cover rounded cursor-pointer"
                   onClick={() => openImage(image)}
                 />
               ))}
@@ -48,8 +49,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-
-      {/* Modal for Image Preview */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"

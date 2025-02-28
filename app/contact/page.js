@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Contact() {
@@ -32,6 +33,12 @@ export default function Contact() {
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-sm">
+      <nav className="mb-6">
+        <Link href="/" className="mr-4 text-green-900 font-bold text-2xl">Home</Link>
+        <Link href="/about" className="mr-4 text-green-900 font-bold text-2xl">About</Link>
+        <Link href="/faq" className="mr-4 text-green-900 font-bold text-2xl">FAQ</Link>
+        <Link href="/disclaimer" className="mr-4 text-green-900 font-bold text-2xl">Disclaimer</Link>
+      </nav>
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Contact Us</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -91,7 +98,7 @@ export default function Contact() {
           )}
         </button>
       </form>
-      {status && <p className="mt-4 text-gray-600 text-3xl">{status}</p>}
+      {status && <p className="mt-4 text-gray-600 text-5xl">{status}</p>}
     </div>
   );
 }
