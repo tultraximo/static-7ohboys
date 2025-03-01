@@ -11,9 +11,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "7ohBoys",
-  description: "Quality Kratom products.",
+export const metadata: Metadata = {
+  title: "7ohboys",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  alternates: {
+    canonical: "https://www.7ohboys.com",
+  },
 };
 
 export default function RootLayout({ children }) {
