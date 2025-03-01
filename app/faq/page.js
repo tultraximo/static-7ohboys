@@ -8,7 +8,7 @@ export default function FAQ() {
     },
     {
       question: "What payment options are accepted?",
-      answer: "CC Payment option coming very soon. Cashapp, Venmo, Zelle, Bitcoin for now...",
+      answer: "CC Payment option coming very soon. Cashapp, Venmo, Zelle, Bitcoin for now....",
     },
     {
       question: "How will you ship?",
