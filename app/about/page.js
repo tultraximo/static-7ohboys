@@ -9,7 +9,14 @@ export default function About() {
         <Link href="/contact" className="text-green-900 font-bold text-2xl">Contact Us</Link>
       </nav>
       <h1 className="text-3xl font-bold mb-6 text-gray-800">About Us</h1>
-      <p className="text-gray-600">Offering the highest quality retail and wholesale 7oh tablets. Updates daily! Stay tuned for more!</p>
-    </div>
+      <p className="text-gray-900 font-semibold mb-4">Offering the highest quality retail and wholesale 7oh tablets. Updates daily! Check back frequently for flash deals and more!</p>
+      <p className="text-gray-900 font-semibold mb-4">
+        We value our customers and relationships. We understand the product will speak for itself. We are currently offering samples at low price—please{" "}
+        <Link href="/contact" className="text-blue-600 hover:underline">
+          contact us
+        </Link>!
+        for deals!
+      </p>
+      </div>
   );
 }
