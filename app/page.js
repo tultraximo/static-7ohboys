@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 const products = [
-  { id: 1, name: "Sour Apple 30mg", description: "Amazing taste: 27 mg 7-hydroxymitragynine  *lab tested", price: "$4 < 25 pieces, $3.50 > 24 pieces", images: ["/images/sour_apple.jpg", "/images/sour_apple1.jpeg", "/images/sourapple_lab.jpg"] },
-  { id: 2, name: "Green Apple 30mg", description: "Spectacular taste: 23 mg 7-hydroxymitragynine *lab tested", price: "$4 < 25 pieces, $3.50 > 24 pieces", images: ["/images/green_apple.jpg", "/images/green_apple1.jpg", "/images/greenapple_lab.jpg"] },
-  { id: 3, name: "Fruit Punch 45mg", description: "Great taste: 30 mg 7-hydroxymitragynine *lab tested", price: "$4 < 25 pieces, $3.50 > 24 pieces", images: ["/images/fruit_punch.jpeg", "/images/fruit_punch_sample.jpg", "/images/fruitpunch_lab.jpg"] },
+  { id: 1, name: "Sour Apple 27mg", description: "Amazing taste: 27 mg 7-hydroxymitragynine  *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/sour_apple.jpg", "/images/sour_apple1.jpeg", "/images/sourapple_lab.jpg"] },
+  { id: 2, name: "Green Apple 23mg", description: "Spectacular taste: 23 mg 7-hydroxymitragynine *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/green_apple.jpg", "/images/green_apple1.jpg", "/images/greenapple_lab.jpg"] },
+  { id: 3, name: "Fruit Punch 30mg", description: "Great taste: 30 mg 7-hydroxymitragynine *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/fruit_punch.jpeg", "/images/fruit_punch_sample.jpg", "/images/fruitpunch_lab.jpg"] },
 ];
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
   const closeImage = () => setSelectedImage(null);
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-gray-100 rounded-lg shadow-sm">
+    <div className="max-w-4xl mx-auto p-6 bg-gray-100 rounded-lg shadow-sm md:max-w-4xl">
       <nav className="mb-6">
         <Link href="/about" className="mr-4 text-green-900 font-bold text-2xl">About</Link>
         <Link href="/faq" className="mr-4 text-green-900 font-bold text-2xl">FAQ</Link>
