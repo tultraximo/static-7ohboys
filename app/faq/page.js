@@ -7,12 +7,24 @@ export default function FAQ() {
       answer: "This product is not available for shipping to Alabama, Arkansas, Indiana, Rhode Island, or Wisconsin. It’s also restricted in specific counties such as Sarasota County (Florida), San Diego (California), Oceanside (California), Alton (Illinois), Jerseyville (Illinois), Edwardsville County (Illinois), Columbus (Mississippi), Union County (Mississippi), Ascension (Louisiana), Franklin (Louisiana), and Rapides (Louisiana).",
     },
     {
-      question: "Cur id utimur?",
-      answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      question: "What payment options are accepted?",
+      answer: "CC Payment option coming very soon. Bitcoin, gii",
     },
     {
-      question: "Unde venit?",
-      answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      question: "How will you ship?",
+      answer: "All standard orders will go out USPS Priority or UPS Ground (our choice unless requested), samples will be USPS Ground Advantage.",
+    },
+    {
+      question: "When will you ship?",
+      answer: "All standard orders received by 10 am PST will go out same day.",
+    },
+    {
+      question: "Express shipping available?",
+      answer: "Case by case basis.",
+    },
+    {
+      question: "How do we contact you?",
+      answer: "Click the link above and send a message.",
     },
   ];
 

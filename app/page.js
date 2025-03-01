@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 const products = [
-  { id: 1, name: "Sour Apple 27mg", description: "Amazing taste: 27 mg 7-hydroxymitragynine  *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/sour_apple.jpg", "/images/sour_apple1.jpeg", "/images/sourapple_lab.jpg"] },
-  { id: 2, name: "Green Apple 23mg", description: "Spectacular taste: 23 mg 7-hydroxymitragynine *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/green_apple.jpg", "/images/green_apple1.jpg", "/images/greenapple_lab.jpg"] },
-  { id: 3, name: "Fruit Punch 30mg", description: "Great taste: 30 mg 7-hydroxymitragynine *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/fruit_punch.jpeg", "/images/fruit_punch_sample.jpg", "/images/fruitpunch_lab.jpg"] },
+  { id: 1, name: "Sour Apple 27mg", description: "27 mg 7-hydroxymitragynine  *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/sour_apple.jpg", "/images/sour_apple1.jpeg", "/images/sourapple_lab.jpg"] },
+  { id: 2, name: "Green Apple 23mg", description: "23 mg 7-hydroxymitragynine *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/green_apple.jpg", "/images/green_apple1.jpg", "/images/greenapple_lab.jpg"] },
+  { id: 3, name: "Fruit Punch 30mg", description: "30 mg 7-hydroxymitragynine *lab tested", price: "$40 for 10 packs, $180 50 packs, $300 100 packs. Samples available", images: ["/images/fruit_punch.jpeg", "/images/fruit_punch_sample.jpg", "/images/fruitpunch_lab.jpg"] },
 ];
 
 export default function Home() {
@@ -28,9 +28,9 @@ export default function Home() {
         {products.map((product) => (
           <div key={product.id} className="flex flex-col items-center">
             <div className="border p-4 rounded w-full bg-white">
-              <h2 className="text-xl font-semibold text-gray-800">{product.name}</h2>
-              <p className="text-gray-600">{product.description}</p>
-              <p className="text-gray-600">{product.price}</p>
+              <h2 className="text-xl font-semibold text-green-800">{product.name}</h2>
+              <p className="text-black font-semibold">{product.description}</p>
+              <p className="text-gray-900">{product.price}</p>
             </div>
             <div className="mt-4 md:space-y-2 flex md:flex-col space-x-2 md:space-x-0 w-full overflow-x-auto">
               {product.images.map((image, index) => (
