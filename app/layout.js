@@ -1,6 +1,8 @@
 // app/layout.js (Server Component for metadata and layout)
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"; // Import Analytics
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
